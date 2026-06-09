@@ -17,7 +17,7 @@ jobs:
         run: dotnet build DemoUnitTest_ConsoleApp --configuration Release --no-restore
       - name: Test + coverage
         run: >
-          dotnet test UnitTest
+          dotnet test
           --configuration Release --no-build
           --collect:"XPlat Code Coverage"
           --logger "trx;LogFileName=test-results.trx"
